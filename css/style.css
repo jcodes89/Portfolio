@@ -35,9 +35,20 @@ body {
     margin: 1rem 0;
     font-size: 3rem;
     color: var(--color-secondary);
-    text-shadow: 2px 2px #444;
+    text-shadow: 1px 1px #444;
 }
 
+@media screen and (min-width: 768px){
+    .list--inline {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .list__item {
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+}
 
 
 /* Hero */
