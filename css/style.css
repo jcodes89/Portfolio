@@ -24,22 +24,27 @@ body {
 
 .list {
     list-style: none;
+    height: auto;
 }
 
 .list--inline {
+    align-items: center;
+    border-bottom: 1px solid #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
     padding-left: 0;
+    padding: 1rem;
 }
 
 .list__item {
-    margin: 1rem 0;
-    font-size: 3rem;
+    border-bottom:1px solid #6666;
     color: var(--color-secondary);
-    text-shadow: 1px 1px #444;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+    text-shadow: 1px 2px 2px #222;
 }
 
 @media screen and (min-width: 768px){
@@ -49,8 +54,27 @@ body {
     }
 
     .list__item {
+        border-bottom: 0;
+        font-size: 1.4rem;
         margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .list__item {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .list__item {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .list__item {
+        font-size: 3rem;
     }
 }
 
@@ -73,7 +97,7 @@ body {
 
 /* block */
 .block {
-    height: 100vh;
+    height: 200vh;
     width: 100%;
 }
 
@@ -81,7 +105,6 @@ body {
     background: var(--color-background);
     background-image: var(--color-background-image);
      /* background by SVGBackgrounds.com */
-    position: fixed;
 }
 
 .block--dark {
@@ -90,28 +113,42 @@ body {
 }
 
 
+/* Navbar */
+
+.nav {
+    width: 100%;
+    position: fixed;
+   
+}
+
+.nav__header {
+    background: var(--color-primary);
+}
+
 /* Hero */
 .hero{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    display: flex;
     height: 100vh;
-    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero--primary {
-    height: 10rem;
-    line-height: 9rem;
-    overflow: hidden;
     background: var(--color-primary);
-    padding: 0 2rem 0 2rem;
     border-radius: var(--border-radius);
     border: 1px solid #4444;
     box-shadow: 0 0 10px 5px #4444,
     0 0 20px 5px #3333,
-    0 0 30px 5px #2222
+    0 0 30px 5px #2222,
+    0 0 40px 5px #1111,
+    0 0 40px 5px #0000
     ;
+    height: 6rem;
+    line-height: 6rem;
+    margin: 0 .5rem;
+    overflow: hidden;
+    padding: 0 2rem 0 2rem;
 }
 
 .dynamic-group {
@@ -121,40 +158,40 @@ body {
 }
 .dynamic-item {
     align-items: center;
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: .5rem;
+    animation: slide 20s steps(4) infinite;
     color: var(--color-secondary);
-    font-size: 6rem;
+    font-size: 2.5rem;
     font-weight: 500;
+    letter-spacing: .1;
+    list-style: none;
+    margin-bottom: .5rem;
+    margin-left: 0;
     position: relative;
     top: 0;
-    animation: slide 20s steps(4) infinite;
-    letter-spacing: .1;
 }
 
 @keyframes slide {
     100% {
-        top: -375px;
+        top: -300px;
     }
 }
 
 .dynamic-item span {
-    position: relative;
-    margin: 1rem 0;
     line-height: 7rem;
+    margin: 1rem 0;
+    position: relative;
 }
 
 .dynamic-item span::after {
     content: "";
-    position: absolute;
-    margin: 1rem 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    animation: typing 5s steps(15) infinite;
     background: var(--color-primary);
     border-left: 2px solid var(--color-secondary);
-    animation: typing 5s steps(15) infinite;
+    height: 100%;
+    left: 0;
+    margin: 2.2rem 0;
+    position: absolute;
+    width: 100%;
 }
 
 @keyframes typing {
@@ -164,5 +201,26 @@ body {
 
     100% {
         left: 0;
+    }
+}
+
+@media screen and (min-width: 786px){
+    .hero--primary{
+        height: 10rem;
+        line-height: 9rem;
+
+    }
+    .dynamic-item {
+        font-size: 6rem;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -375px;
+        }
+    }
+
+    .dynamic-item span::after{
+        margin: 1rem 0;
     }
 }
