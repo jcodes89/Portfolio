@@ -100,6 +100,7 @@ body {
     }
 }
 
+
 /* Grid */
 .grid {
     display: grid;
@@ -247,6 +248,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    border-bottom: 2px solid var(--color-purple);
 }
 
 .hero-background {
@@ -272,7 +274,7 @@ body {
     width: 100%;
     padding-left: 0;
     box-shadow: 0 0 5px 2px var(--color-purple),
-    0 0 10px 3px var(--color-purple);
+    0 0 10px 5px var(--color-purple);
 }
 
 .dynamic__item {
@@ -320,18 +322,24 @@ body {
     padding: 1rem 2rem;
     border-radius: 10px 10px 0 0;
     bottom: 0;
-    background: var(--color-purple);
+    background: var(--color-primary);
+     font-family: 'Rock Salt';
+     outline: none;
+     border: 2px solid var(--color-purple);
 }
 
 .portfolio__link {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .portfolio:hover {
-    transform: scale(1.2);
+    background: var(--color-purple);
 }
 
+.portfolio__link:hover {
+    color: var(--color-primary);
+}
 
 @media screen and (min-width: 768px){
     .hero-background {
@@ -345,3 +353,38 @@ body {
         transform: translate(-150%, 0%) rotate(0deg);
     }
 }
+
+/* Works */
+
+.works {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 2rem 0;
+}
+
+.works--davinch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works__phone {
+    position: absolute;
+
+}
+
+.works__image {
+    position: relative;
+    width: 265px;
+    height: 570px;
+    border-radius: 30px 30px;
+}
+
+.works__heading {
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+}
+
