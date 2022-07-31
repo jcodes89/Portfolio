@@ -145,7 +145,6 @@ body {
     background: var(--color-primary);
     color: white;
     border-bottom: 1px solid var(--color-purple);
-    
 }
 
 .nav__logo {
@@ -273,8 +272,7 @@ body {
     width: 100%;
     padding-left: 0;
     box-shadow: 0 0 5px 2px var(--color-purple),
-    0 0 10px 3px var(--color-purple),
-    0 0 15px 5px var(--color-purple);
+    0 0 10px 3px var(--color-purple);
 }
 
 .dynamic__item {
@@ -307,7 +305,7 @@ body {
     width: 100%;
     background: var(--color-primary);
     border-left: 2px solid purple;
-    animation: typing 4000ms steps(18) infinite;
+    animation: typing 4000ms steps(17) infinite;
 }
 
 @keyframes typing {
@@ -335,108 +333,15 @@ body {
 }
 
 
-
-
-
-/* Hero */
-
-/*
-.hero{
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
-}
-
-.hero--primary {
-    background: var(--color-primary);
-    border-radius: var(--border-radius);
-    border: 1px solid #4444;
-    box-shadow: 0 0 10px 5px #4444,
-    0 0 20px 5px #3333,
-    0 0 30px 5px #2222,
-    0 0 40px 5px #1111,
-    0 0 40px 5px #0000
-    ;
-    height: 6rem;
-    line-height: 6rem;
-    margin: 0 .5rem;
-    overflow: hidden;
-    padding: 0 2rem 0 2rem;
-}
-
-.dynamic-group {
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 0;
-}
-.dynamic-item {
-    align-items: center;
-    animation: slide 20s steps(4) infinite;
-    color: var(--color-secondary);
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: .1;
-    list-style: none;
-    margin-bottom: .5rem;
-    margin-left: 0;
-    position: relative;
-    top: 0;
-}
-
-@keyframes slide {
-    100% {
-        top: -300px;
+@media screen and (min-width: 768px){
+    .hero-background {
+        font-size: 12rem;
+        transform: translate(-20%, -19%) rotate(30deg);
     }
 }
-
-.dynamic-item span {
-    line-height: 7rem;
-    margin: 1rem 0;
-    position: relative;
-}
-
-.dynamic-item span::after {
-    content: "";
-    animation: typing 5s steps(15) infinite;
-    background: var(--color-primary);
-    border-left: 2px solid var(--color-secondary);
-    height: 100%;
-    left: 0;
-    margin: 2.2rem 0;
-    position: absolute;
-    width: 100%;
-}
-
-@keyframes typing {
-    40%, 60% {
-        left: calc(100% + 10px);
-    }
-
-    100% {
-        left: 0;
+@media screen and (min-width: 1024px){
+    .hero-background {
+        font-size: 15rem;
+        transform: translate(-150%, 0%) rotate(0deg);
     }
 }
-
-@media screen and (min-width: 786px){
-    .hero--primary{
-        height: 10rem;
-        line-height: 9rem;
-
-    }
-    .dynamic-item {
-        font-size: 6rem;
-    }
-
-    @keyframes slide {
-        100% {
-            top: -375px;
-        }
-    }
-
-    .dynamic-item span::after{
-        margin: 1rem 0;
-    }
-}
-*/
