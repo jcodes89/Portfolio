@@ -402,13 +402,14 @@ body {
 /* Works */
 .works-title h2 {
     font-size: 6rem;
-    transform: translate(50%, -140%) rotate(-20deg);
-    opacity: .3;
+    transform: translate(50%, -100%) rotate(-10deg);
+    opacity: .4;
     z-index: -1;
     position: absolute;
     font-family: 'Rock Salt','Roboto Slab', serif;
     color: var(--color-purple);
     border-bottom: 3px solid purple;
+    padding-bottom: 1rem;
 }
 .works {
     height: 100vh;
@@ -452,6 +453,7 @@ body {
 }
 
 .works__phone {
+    margin: 4rem 0 0 0;
     display: flex;
     justify-content: center;
 }
@@ -464,7 +466,7 @@ body {
 .works__img {   
    position: absolute;
    height: 380px;
-   top: 40px;
+   top: 80px;
    border-radius: 17px;
     }
 .works__laptop {
