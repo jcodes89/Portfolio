@@ -284,7 +284,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    border-bottom: 2px solid var(--color-purple);
 }
 
 .hero-background {
@@ -356,14 +355,16 @@ body {
 
 .portfolio {
     position: absolute;
-    padding: 1rem 0;
-    border-radius: 10px 10px 0 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    z-index: 3;
+    padding: 1rem 1rem;
+    border-radius: 10px 10px;
+    transform: translate(-65%, 510%);
     background: var(--color-purple);
     font-family: 'Rock Salt';
+    font-size: 1.8rem;
     outline: none;
-    border: 2px solid var(--color-purple);
+    border: 2px solid var(--color-secondary);
 }
 
 .portfolio__link {
@@ -374,7 +375,7 @@ body {
 
 .portfolio:hover {
     background: var(--color-secondary);
-    transform: scale(1.1);
+    border: 2px solid var(--color-purple);
 }
 
 .portfolio__link:hover {
@@ -384,25 +385,27 @@ body {
 @media screen and (min-width: 768px){
     .hero-background {
         font-size: 12rem;
-        transform: translate(-20%, -19%) rotate(30deg);
+        transform: translate(-0%, -15%) rotate(30deg);
     }
 }
 @media screen and (min-width: 1024px){
     .hero-background {
         font-size: 15rem;
-        transform: translate(-150%, -10%) rotate(0deg);
+        transform: translate(-110%, -10%) rotate(0deg);
     }
 
     .portfolio {
         display: flex;
         position: fixed;
+        transform: translate(300%, 510%);
+
     }
 }
 
 /* Works */
 .works-title h2 {
     font-size: 6rem;
-    transform: translate(50%, -100%) rotate(-10deg);
+    transform: translate(50%, -70%) rotate(-10deg);
     opacity: .4;
     z-index: -1;
     position: absolute;
@@ -539,7 +542,7 @@ body {
 @media screen and (min-width:1200px){
 
     .works__phone{
-        transform: scale(1.2);
+        transform: scale(1.15);
         margin: 2rem;
     }
     .works__laptop {
