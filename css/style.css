@@ -475,6 +475,10 @@ body {
 
 @media screen and (min-width: 768px){
 
+    .works-title h2 {
+        transform: translate(10%, -70%) rotate(-10deg);
+    }
+
     .works--primary {
         display: grid;
         height: 100%;
@@ -513,10 +517,14 @@ body {
         transform: scale(1.3);
     }
 
+
     .works__lap {
       height: 300px;
     }
 
+    .works__img {
+        top: 40px;
+    }
     .works__img-two {
         display: flex;
         position: absolute;
