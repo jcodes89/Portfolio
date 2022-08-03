@@ -103,6 +103,25 @@ body {
     }
 }
 
+/* Button */
+.btn {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 1rem;
+}
+.btn--primary {
+    color: var(--color-secondary);
+    background: var(--color-primary);
+    border: 1px solid var(--color-purple);
+    border-radius: 10px;
+    margin:0 .5rem;
+    padding: 1rem;
+    box-shadow: -2px 2px 5px 2px var(--color-purple);
+}
+
+
 /* Links */
 .link {
     list-style: none;
@@ -154,14 +173,18 @@ body {
     position: relative;
 }
 
-.block--light {
-   
-    
-    }
-
 .block--dark {
     background: var(--color-background-dark);
     background-image: var(--color-background-dark-image);
+}
+
+.block--skewed {
+    background: purple;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(0% 0%, 69% 0%, 100% 0%, 100% 19%, 0% 71%);
+    position: absolute;
+    
 }
 
 
@@ -607,6 +630,73 @@ body {
         transform: scale(3);
     }
 }
+
+/* Contact */
+
+.contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/altumcode-dMUt0X3f59Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: .5;
+}
+
+.contact-title h2 {
+    font-size: 4.5rem;
+    transform: translate(0%, -40%) rotate(-10deg);
+    opacity: .7;
+    z-index: 1;
+    position: absolute;
+    font-family: 'Rock Salt','Roboto Slab', serif;
+    color: var(--color-purple);
+    border-bottom: 3px solid purple;
+    padding-bottom: 1rem;
+}
+
+.form {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-purple);
+    border-radius: var(--border-radius);
+    outline: 0;
+    margin: 1.5rem;
+    padding: 2rem 1rem 1rem 0;
+    box-shadow: 0 0 30px 5px #333;
+    width: 500px;
+    height: auto;
+}
+
+.form__input {
+    padding: .5rem 1rem;
+    margin: 0rem;
+}
+
+.form__input input, textarea {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: var(--color-purple);
+    padding: .5rem ;
+    letter-spacing: 1px;
+    border: 1px solid var(--color-purple);
+    resize: none;
+}
+
+::placeholder {
+    color: var(--color-purple);
+}
+
+@media screen and (min-width: 1024px){
+    
+}
+
 
 
 
