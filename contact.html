@@ -38,7 +38,7 @@
         <h2>Contact</h2>
     </div>
     <main class="block contact">
-       <form name="contact" class="form" method="post" data-netlify="true" onsubmit="submit">
+       <form name="portfolio" class="form" method="post" data-netlify-recaptcha="true" data-netlify="true" onsubmit="submit">
             <div class="form-group">
                 <div class="form__input">
                     <label><input type="text" placeholder="Name" id="name" name="name" required></label>
@@ -49,6 +49,7 @@
                 <div class="form__input">
                     <label><textarea class="textarea" name="textarea" id="textarea" cols="" rows="10" required></textarea></label>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="btn">
                     <button class="btn--primary" type="submit" >Submit</button>
                     <button class="btn--primary" type="reset">Clear</button>
