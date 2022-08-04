@@ -498,10 +498,10 @@ body {
 }
 
 .works__heading-background {
-    width: 30rem;
+    width: 28rem;
     height: 2.6rem;
     top:-2.1rem;
-    left: 0rem;
+    left: -.5rem;
     position: relative;
     background: var(--color-purple);
     z-index: 1;
