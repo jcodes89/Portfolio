@@ -703,11 +703,6 @@ body {
 
 }
 
-.data-netlify-recaptcha {
-    display: flex;
-    justify-content: center;
-}
-
 ::placeholder {
     color: var(--color-purple);
 }
