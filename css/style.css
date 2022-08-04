@@ -494,7 +494,7 @@ body {
     padding: 0;
     position: relative;
     z-index: 2;
-    text-shadow: -2px 2px 2px var(--color-purple);
+    text-shadow: -3px 3px 2px var(--color-purple);
 }
 
 .works__heading-background {
@@ -503,9 +503,9 @@ body {
     top:-2.1rem;
     left: -.5rem;
     position: relative;
-    background: var(--color-purple);
+    background: var(--color-primary);
     z-index: 1;
-    box-shadow: -2px 2px 4px 0 var(--color-purple);
+    box-shadow: -5px 5px 4px 0 var(--color-purple);
 }
 
 .works__tagline {
