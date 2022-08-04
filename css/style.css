@@ -121,6 +121,28 @@ body {
     box-shadow: -2px 2px 5px 2px var(--color-purple);
 }
 
+.btn-works {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--secondary {
+    color: var(--color-secondary);
+    background: var(--color-purple);
+    font-size: 1.1rem;
+    border: 1px solid var(--color-purple);
+    border-radius: 10px;
+    box-shadow: -2px 2px 4px 0 var(--color-purple);
+    padding: .8rem;
+    
+}
+
+.btn-works span {
+    margin: .4rem;
+}
+
 
 /* Links */
 .link {
@@ -469,8 +491,21 @@ body {
 
 .works__heading {
     margin-bottom: 0;
-    border-bottom: 1px solid purple;
-    padding: 0 0 1rem 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    text-shadow: -2px 2px 2px var(--color-purple);
+}
+
+.works__heading-background {
+    width: 30rem;
+    height: 2.6rem;
+    top:-2.1rem;
+    left: 0rem;
+    position: relative;
+    background: var(--color-purple);
+    z-index: 1;
+    box-shadow: -2px 2px 4px 0 var(--color-purple);
 }
 
 .works__tagline {
@@ -702,6 +737,7 @@ body {
     box-shadow: -2px 2px 5px 2px var(--color-purple);
 
 }
+
 
 ::placeholder {
     color: var(--color-purple);
