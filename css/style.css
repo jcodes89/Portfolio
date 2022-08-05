@@ -448,6 +448,49 @@ body {
     }
 }
 
+/* Skills */
+
+.skills {
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-purple);
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__header {
+    font-family: 'Roboto Slab';
+    font-size: 3rem;
+    color: white;
+}
+
+.skills__heading {
+    margin: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.skills__icons {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-html5, .fa-css3 {
+    margin: 2rem;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 1024px){
+    .skills__icons {
+        display: flex;
+    }
+}
+
+
+
+
 /* Works */
 .works-title h2 {
     font-size: 6rem;
