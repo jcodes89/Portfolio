@@ -177,13 +177,12 @@ body {
 }
 
 .link-about {
-    position: absolute;
-    bottom: 5rem;
     width: auto;
     height: 4rem;
     margin: 1rem;
     text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -193,7 +192,8 @@ body {
     padding: 1rem;
     text-decoration: none;
     border: 1px solid var(--color-purple);
-    border-radius: var(--border-radius);
+    border-radius: 15px;
+    font-size: 1.5rem;
 }
 
 .link-about a:hover {
@@ -202,25 +202,35 @@ body {
     border: 1px solid var(--color-secondary);
 }
 
+@media screen and (min-width: 308px)and (max-width: 1024px) and (orientation: landscape){
+    .link-about {
+        transform: scale(.7);
+    }
+
+    .link-about a{
+        border-radius: 15px;
+        font-size: 1.8rem;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .link-about {
-        bottom: 10rem;
         transition: ease-in-out 1s;
+    }
+
+    .link-about a {
+        font-size: 2.2rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .link-about {
-        bottom: 15rem;
         transition: ease-in-out 1s;
     }
 }
 
 @media screen and (min-width: 2000px) {
     .link-about {
-        transform: scale(2);
-        bottom: 20rem;
         transition: ease-in-out 1s;
     }
 }
@@ -491,7 +501,7 @@ body {
     color: var(--color-purple);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 308px)and (max-width: 1024px) and (orientation: landscape) {
     .hero-background {
         position: absolute;
         font-family: 'Roboto Slab';
@@ -508,16 +518,16 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation:portrait) {
     .hero-background {
         font-size: 12rem;
         transform: translate(-0%, -15%) rotate(30deg);
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     .hero-background {
-        font-size: 15rem;
+        font-size: 14rem;
         transform: translate(-110%, -10%) rotate(0deg);
     }
 
@@ -906,7 +916,7 @@ textarea {
     color: var(--color-secondary);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 308px)and (max-width: 1024px) and (orientation: landscape){
     .form {
         background-color: var(--color-primary);
         border: 1px solid var(--color-purple);
@@ -918,21 +928,18 @@ textarea {
         width: 500px;
         height: auto;
         z-index: 1;
-        transform: scale(.43);
+        transform: scale(.6);
     }
 }
-
-@media screen and (min-width: 820px) {
-    .form {
-        transform: scale(1);
-        transition: 1s;
-    }
-}
-
 
 @media screen and (min-width: 1024px) {
     .contact-title h2 {
         transform: scale(1.5) translate(20%, 40%) rotate(-20deg);
+    }
+
+    .form {
+        transform: scale(1);
+        transition: 1s;
     }
 
 }
@@ -1035,6 +1042,12 @@ textarea {
 
 .about__heading span {
     color: var(--color-purple);
+}
+
+@media screen and (min-width: 308px)and (max-width: 1024px) and (orientation: landscape){
+    .about-group {
+        transform: scale(.9);
+    }
 }
 
 @media screen and (min-width: 640px) {
