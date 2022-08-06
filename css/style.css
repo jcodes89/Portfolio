@@ -124,7 +124,19 @@ body {
     border-radius: 10px;
     margin: .5rem 1rem;
     padding: 1rem;
+}
 
+.btn--primary:hover {
+    color: var(--color-purple);
+    background: var(--color-secondary);
+    border: 1px solid var(--color-purple);
+    box-shadow: 0 0 10px 5px var(--color-purple);
+}
+
+.btn--primary:active {
+    background: var(--color-purple);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
 }
 
 .btn-works {
@@ -143,13 +155,12 @@ body {
     border-radius: 10px;
     box-shadow: -2px 2px 4px 0 var(--color-purple);
     padding: .8rem;
-
+    cursor: default;
 }
 
 .btn-works span {
     margin: .4rem;
 }
-
 
 /* Links */
 .link {
@@ -172,7 +183,7 @@ body {
     background: var(--color-purple);
     color: var(--color-primary);
     border: var(--color-secondary);
-    box-shadow: none;
+    box-shadow: -2px 2px 5px 2px var(--color-secondary);
     outline: 1px solid var(--color-secondary);
 }
 
@@ -187,19 +198,25 @@ body {
 }
 
 .link-about a {
-    background-color: var(--color-secondary);
-    color: var(--color-purple);
+    background-color: var(--color-purple);
+    color: var(--color-secondary);
     padding: 1rem;
     text-decoration: none;
-    border: 1px solid var(--color-purple);
+    border: 1px solid var(--color-secondary);
     border-radius: 15px;
     font-size: 1.5rem;
 }
 
 .link-about a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-purple);
+    border: 2px solid var(--color-purple);
+    box-shadow: 0 0 10px 5px var(--color-purple);
+}
+
+.link-about a:active {
     background-color: var(--color-purple);
     color: var(--color-secondary);
-    border: 1px solid var(--color-secondary);
 }
 
 @media screen and (min-width: 308px)and (max-width: 1024px) and (orientation: landscape){
@@ -219,7 +236,7 @@ body {
     }
 
     .link-about a {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -666,6 +683,8 @@ body {
 .works__tagline {
     font-size: 1.6rem;
     padding-left: .5rem;
+    text-indent: 10px;
+    line-height: 1.4;
 }
 
 .works__phone {
